@@ -1,0 +1,135 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+
+/* Header
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+header {
+    height: 8vh;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 10;
+}
+
+header .logo {
+    max-height: 8vh;
+}
+
+/* Hero Unit
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.hero_unit {
+    height: 100vh;
+    background-color: #333;
+    background: url(../images/hero-background/bg8.jpg);
+    background-size: cover;
+    background-position: 0 -200px;
+}
+
+.hero_unit h1 {
+    font-weight: 300;
+    text-align: center;
+    color: #fff;
+}
+
+.hero_unit h2 {
+    font-weight: 300;
+    text-align: center;
+    color:#fff;
+}
+
+.hero_unit .cta {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.hero_unit .cta a {
+    color:#fff;
+    background: #6ec;
+    padding: 2rem 5rem;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    font-size: 2rem;
+}
+
+.hero_unit .secondary_actions {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.hero_unit .secondary_actions a {
+    color:#fff;
+    margin:0 5px;
+}
+
+/* Features 
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.features .row {
+    margin-top: 8vh;
+}
+
+.features img {
+    max-width: 90%;
+}
+
+/* Footer
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.footer {
+    background-color: #555;
+    padding:30px 0;
+    color:#fff;
+    border-bottom: 20px solid #333;
+}
+
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Bigger than 550 */
+@media (min-width: 550px) {
+    /* Hero Unit
+    –––––––––––––––––––––––––––––––––––––––––––––––––– */
+    .hero_unit .stellar {
+        margin-top: 10rem;
+    }
+}
+
+/* Bigger than 750 */
+@media (min-width: 750px) {
+    /* Hero Unit
+    –––––––––––––––––––––––––––––––––––––––––––––––––– */
+    .hero_unit .stellar {
+        margin-top: 10rem;
+    }
+}
+
+/* Bigger than 1000 */
+@media (min-width: 1000px) {
+    /* Hero Unit
+    –––––––––––––––––––––––––––––––––––––––––––––––––– */
+    .hero_unit .stellar {
+        margin-top: 17rem;
+    }
+}
+
+/* Headroom.js
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+header.headroom {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all .2s ease-in-out;
+}
+
+header.headroom--unpinned {
+    top: -8vh;
+}
+
+header.headroom--pinned {
+    top: 0;
+}
